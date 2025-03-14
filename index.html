@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TB Diagnosis Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">TB Diagnosis</a>
+            <ul class="navbar-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.who.int/news-room/fact-sheets/detail/tuberculosis">WHO</a></li>
+                <li><a href="https://dghs.mohfw.gov.in/national-tuberculosis-elimination-programme.php">Schemes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TB Diagnosis using AI</h1>
+            <p>Upload an X-ray to predict whether it's positive or negative for TB</p>
+        </div>
+    </header>
+
+    <!-- Prediction Form -->
+    <div class="form-container">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <label for="file" class="upload-label">Upload X-ray Image</label>
+            <input type="file" name="file" id="file" class="file-input" accept="image/*" required>
+            <button type="submit" class="submit-btn">Predict</button>
+        </form>
+    </div>
+    <br><br>
+    <!-- Prediction Result -->
+    <div id="result" class="result">
+        <h2 id="prediction-result">AI Disease Predictor..TRY IT NOW </h2>
+        <h3> TRY IT NOW & TRUST FOREVER</h3>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<br><br>
+<br><br>
+<br><br>
+    <footer id="contact">
+        <p>Contact us: <a href="mailto:info@tbdiagnosis.com">info@tbdiagnosis.com</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

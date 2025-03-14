@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a href="/" class="navbar-logo">Prediction Result</a>
+                    <ul class="navbar-links">
+                        <li><a href="https://dghs.mohfw.gov.in/contact-us.php">Consult</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+
+        <div class="result">
+            <h2>Your TB Diagnosis Prediction:</h2>
+            <h3>{{ result }}</h3>
+            <br><br>
+            <div class="back-button">
+                <a href="/" class="button">Upload Another Image</a>
+            </div>
+            <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+    <!-- Inserting Image -->
+    <img src="https://static.pib.gov.in/WriteReadData/userfiles/image/image003EU04.jpg" alt="Image Description" width="500">
+
+            <br><br>
+            <br><br>
+            <br><br>
+            <p>Thank you for using our service! If you have any further questions, feel free to reach out to a healthcare professional.</p>
+        </div>
+
+       
+    </div>
+
+    <footer>
+        <p>Developed by Armaan Samir Jena | AI for Health</p>
+    </footer>
+</body>
+</html>
